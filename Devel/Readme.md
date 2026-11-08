@@ -21,7 +21,7 @@ The website has a default IIS page.
 Something seems fishy!
 
 
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Devel/Images/IIS7.PNG "IIS7")
+![Alt test](Images/IIS7.PNG "IIS7")
 
 
 
@@ -70,7 +70,7 @@ local: test.txt remote: test.txt
 13 bytes sent in 0.00 secs (634.7656 kB/s)
 ```
 
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Devel/Images/testupload.PNG "testupload")
+![Alt test](Images/testupload.PNG "testupload")
 
 Voila! the file appears.
 
@@ -153,7 +153,7 @@ LHOST => 10.10.15.155
 
 We navigate to http://10.10.10.5/dotaplayer.aspx to spawn a reverse shell and this crops up on our terminal
 
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Devel/Images/Spwaningmsfshell.PNG "spawnmsfshell")
+![Alt test](Images/Spwaningmsfshell.PNG "spawnmsfshell")
 
 
 ```{r, engine='bash', count_lines}

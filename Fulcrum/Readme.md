@@ -21,7 +21,7 @@ After checking out whats there under those webservers
 
     Shows under maintenence
 
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/Website-4.PNG"></kbd>
+    <kbd><img src="Images/Website-4.PNG"></kbd>
 
     We can see a structure like this: http://10.10.10.62:4/index.php?page=home
 
@@ -32,26 +32,26 @@ page=http://10.10.14.99/test) it doesnt connect to our webserver
 
     Gives a Server Error
 
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/Website-80.PNG"></kbd>
+    <kbd><img src="Images/Website-80.PNG"></kbd>
 
 * **10.10.10.62:88**
 
     Phpmyadmin
 
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/Website-88.PNG"></kbd>
+    <kbd><img src="Images/Website-88.PNG"></kbd>
 
 
 * **10.10.10.62:9999**
 
     PFSense Firewall
     
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/Website-9999.PNG"></kbd>
+    <kbd><img src="Images/Website-9999.PNG"></kbd>
 
 * **10.10.10.62:56423**
 
     Looks like some api
 
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/Website-56423.PNG"></kbd>
+    <kbd><img src="Images/Website-56423.PNG"></kbd>
 
 
 ### Initial Foothold
@@ -253,7 +253,7 @@ We do nslookup of those machine names on the Powershell machine and we can ident
 
 Lets have a network map handy so we dont confuse stuff
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/Network-Diagram.png"></kbd>
+<kbd><img src="Images/Network-Diagram.png"></kbd>
 
 
 Lets get back to the PSSession
@@ -340,7 +340,7 @@ Invoke-Command -Computername file.fulcrum.local -ScriptBlock {whoami} -credentia
 ```
 While Invoking it, it will ask for Credentials
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/BTables.PNG"></kbd>
+<kbd><img src="Images/BTables.PNG"></kbd>
 
 ```
 > Invoke-Command -Computername file.fulcrum.local -ScriptBlock {whoami} -credential $cred
@@ -435,7 +435,7 @@ topic.
 Maybe we dont have direct access to the dc, we might have to route the Commands through the file.fulcrum.local
 It will ask for creds twice (Once for the file server and once for the dc) At both places we can enter 923a's creds as it is the domain admin
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Fulcrum/Images/923a.PNG"></kbd>
+<kbd><img src="Images/923a.PNG"></kbd>
 
 
 ```

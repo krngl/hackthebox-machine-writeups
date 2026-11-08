@@ -56,11 +56,11 @@ We can add both of them to our hosts file ofcourse
     
     Maintainence!
     
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Ariekei/Images/beehive.htb.PNG"></kbd>
+    <kbd><img src="Images/beehive.htb.PNG"></kbd>
     
     After dirbusting we instantly get a page like this! https://beehive.ariekei.htb/cgi-bin/stats/
     
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Ariekei/Images/shellshock.website.PNG"></kbd>
+    <kbd><img src="Images/shellshock.website.PNG"></kbd>
     
     This screams shellshock!!
     
@@ -115,7 +115,7 @@ oo $ $ "$      o$$$$$$$$$    $$$$$$$$$$$$$    $$$$$$$$$o       $$$o$$o$
 
     Not Found?!
 
-    <kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Ariekei/Images/calvin.htb.PNG"></kbd>
+    <kbd><img src="Images/calvin.htb.PNG"></kbd>
     
 After doing some dirbusting we find a directory named ```/upload``` which has a very peculiar looking page
     
@@ -313,11 +313,11 @@ Lets go Johnny!
 
 Step1:
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Ariekei/Images/Johnny1.PNG"></kbd>
+<kbd><img src="Images/Johnny1.PNG"></kbd>
 
 Step 2:
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Ariekei/Images/Johnny2.PNG"></kbd>
+<kbd><img src="Images/Johnny2.PNG"></kbd>
 
 Le SSH Password
 

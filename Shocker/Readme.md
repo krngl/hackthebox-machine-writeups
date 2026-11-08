@@ -30,24 +30,24 @@ It had the normal cgi folders and images folders
 The name of the box looks suspicious though. Must be a shellshock vuln!
 
 After a little google dorking we find something like this:
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Shocker/images/is_vuln_if.png "Is vuln if")
+![Alt test](images/is_vuln_if.png "Is vuln if")
 
 The first three points look perfect for our system. AND for the last point we need a bash script.
 Dirbuster the great can help us search with file extensions
-![Alt text](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Shocker/images/dirbuster.png "Dirbuster")
+![Alt text](images/dirbuster.png "Dirbuster")
 
 Now we got a presumably vulnerable bash script
 
 **Time to go hunting**
 
 Searchsploiting apache mod cgi gives us 34900.py
-![Alt text](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Shocker/images/searchsploit.png "Searchsploit")
+![Alt text](images/searchsploit.png "Searchsploit")
 
 
 The python script won't work out of the box though. We need to add the vulnerable bash script into the the scope.
 We add it under the pages array
 
-![Alt text](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Shocker/images/adding_pages.png "Adding Pages")
+![Alt text](images/adding_pages.png "Adding Pages")
 
 
 

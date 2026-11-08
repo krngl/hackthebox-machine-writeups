@@ -46,7 +46,7 @@ okay so apparently there should be a /secret_area_51 directory. And indeed there
 The only file there is the **Smash Mouth - All Star.mp3**.. I smell steganography.
 One of the easiest steganography methods on sound files is hiding someting in the spectogramm so let's check for that.
 
-![spectogramm](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Shrek/images/spectogramm.png "spectogramm")
+![spectogramm](images/spectogramm.png "spectogramm")
 
 Alright that was easy, we got the FTP creds: **donkey:d0nk3y1337!**
 

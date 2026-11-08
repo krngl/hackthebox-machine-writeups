@@ -20,7 +20,7 @@ Nmap done: 1 IP address (1 host up) scanned in 12.48 seconds
 
 
 Website directs us to devcompany's page
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Lazy/images/Website.PNG "Website")
+![Alt test](images/Website.PNG "Website")
 
 **To start, you will need to create a user register and then log in to check this company's projects and potential.**
 
@@ -28,7 +28,7 @@ Tried some basic SQL Injections on the login page but nada.
 
 So, lets create a testuser
 
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Lazy/images/testuserlogin.PNG "testuserlogin")
+![Alt test](images/testuserlogin.PNG "testuserlogin")
 
 
 
@@ -38,7 +38,7 @@ Once the user is registered, it automatically logs us in as that user.
 
 Lets try and create a user with the name admin
 
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Lazy/images/adminalreadyexists.PNG "adminalreadyexists")
+![Alt test](images/adminalreadyexists.PNG "adminalreadyexists")
 
 So admin already exists...
 Maybe if we can trick the login form into thinking we have created the admin user, it should automatically log us into admin
@@ -49,16 +49,16 @@ So the user we create will be
 ```
 admin =
 ```
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Lazy/images/loginwithadmin.PNG "loginwithadmin")
+![Alt test](images/loginwithadmin.PNG "loginwithadmin")
 
 And we are IN!!
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Lazy/images/adminpage.PNG "adminpage")
+![Alt test](images/adminpage.PNG "adminpage")
 
 
 There is a ssh key which we can download
 
 
-![Alt test](https://github.com/jakobgoerke/HTB-Writeups/blob/master/Lazy/images/sshkey.PNG "sshkey")
+![Alt test](images/sshkey.PNG "sshkey")
 
 Something important to note in the key page is the highlighted field. Thats the user the key is for
 

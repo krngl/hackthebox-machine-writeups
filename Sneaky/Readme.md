@@ -10,19 +10,19 @@ PORT   STATE SERVICE
 
 The website shows that its under construction
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Sneaky/images/Under-Construction.PNG">
+<kbd><img src="images/Under-Construction.PNG">
 
 
 Dirbuster Initiate!
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Sneaky/images/Dirbuster.PNG"></kbd>
+<kbd><img src="images/Dirbuster.PNG"></kbd>
 
 Well ofcourse, its under **dev**elopment
 
 
 We are greeted by a Login screen
 
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Sneaky/images/Login.PNG"></kdb>
+<kbd><img src="images/Login.PNG"></kdb>
 
 
 Whats the autoresponse when we see a poorly made login page ?
@@ -32,7 +32,7 @@ Yes **' or '1' = '1**
 Simple sql injection. Seems legit
 
 After the login we get juicy stuff
-<kbd><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Sneaky/images/Post-Login.PNG"></kdb>
+<kbd><img src="images/Post-Login.PNG"></kdb>
 
 Lets make a note of the info:
 
@@ -117,7 +117,7 @@ inet6 dead:beef:2::1032  prefixlen 64  scopeid 0x0<global>
 ```
 
 A wise gentelman from ![stack overflow](https://stackoverflow.com/questions/27693120/convert-from-mac-to-ipv6/27693666#27693666) helped us
-<kdb><img src="https://github.com/jakobgoerke/HTB-Writeups/blob/master/Sneaky/images/stack-ipv6.PNG"></kdb>
+<kdb><img src="images/stack-ipv6.PNG"></kdb>
 
 
 
